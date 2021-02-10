@@ -1,2 +1,2 @@
 # HFF.WaterQualityWebApp
-HFF's real-time water quality data web application, R Shiny
+Real-time water quality data web application, R Shiny, Henry's Fork Foundation
