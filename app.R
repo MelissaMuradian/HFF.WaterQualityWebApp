@@ -1,20 +1,11 @@
-# DESCRIPTION: HENRY'S FORK FOUNDATION SCIENTIFIC WEBSITE
-# This is the source code for the HFF scientific website. It is built using the web development framework 
-# shinyapps. For additional resources to learn shiny apps refer to the Sonde Automation Project Manual.
-# This website is broken into two major parts. The UI and the SERVER. Each section of this source code is 
-# thoroughly commented. Please complete the shinyapps tutorials and become familiar with reactive programing
-# BEFORE editting this code!!
-# install.packages('shiny')
-# install.packages('shinydashboard')
-# install.packages('leaflet')
-# install.packages('xml2')
-# install.packages('httr')
-# install.packages('aws.s3')
-# install.packages('knitr')
-# install.packages('shinycssloaders')
-# install.packages('scales')
-# install.packages('xts')
-# install.packages('')
+# DESCRIPTION: HENRY'S FORK FOUNDATION REAL-TIME WATER QUALITY WEBSITE
+# Copyright (C) 2021  MELISSA MURADIAN AND CONTRIBUTORS (ZAC ESPINOSA AND JUSTIN APPLEBY)
+# This program is free software: you can redistribute it and/or modify it under the terms of the 
+# GNU General Public License as published by the Free Software Foundation, either version 3 of the 
+# License, or any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 
 require(shiny)
 require(shinydashboard) # Extra UI Features
@@ -40,11 +31,6 @@ source("www/createXAxis.R")
 # Load function to derive necessary habitat thresholds
 source("www/getHabContext_A.R")
 ################################################################################
-
-## Used with aws.s3 in order to access files located in s3 database ## 
-Sys.setenv("AWS_ACCESS_KEY_ID" = "AKIAJCU6R5ZCOQDW7OMA",
-           "AWS_SECRET_ACCESS_KEY" = "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",
-           "AWS_DEFAULT_REGION" = "us-west-2")
 
 ################################
 # A GLOBAL variable for plotting, sets transparancy
